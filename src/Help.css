@@ -1,0 +1,22 @@
+.help {
+  height: 50px;
+  width: 200px;
+  border: 1px solid lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.help > p {
+  color: #363055;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.help:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  transition: ease-in-out;
+}

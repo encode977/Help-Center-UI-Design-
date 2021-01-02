@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Help from "./Help";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    //BEM Convention
+    <div className="app">
+      <div className="app__body">
+        <h3>Help Center</h3>
+        <div className="app__input">
+          <input placeholder="Search" type="text" />
+        </div>
+        <div className="app__help">
+          <Help title="Billing and Membership" />
+          <Help title="Managing and Organizing" />
+          <Help title="Uploading" />
+          <Help title="Creators" />
+          <Help title="Video Enterprise" />
+          <Help title="Enterprise" />
+          <Help title="Embeding and Sharing" />
+          <Help title="Features" />
+          <Help title="Developer" />
+        </div>
+      </div>
     </div>
   );
 }
